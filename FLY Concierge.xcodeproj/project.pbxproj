@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
-		C69EA0B426709876003F3DE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* ContentView.swift */; };
+		C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* ChatView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
 		C69EA0B926709877003F3DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B826709877003F3DE8 /* Preview Assets.xcassets */; };
+		C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C026709CF7003F3DE8 /* Message.swift */; };
+		C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C226709D54003F3DE8 /* MessageListViewModel.swift */; };
+		C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C42670A196003F3DE8 /* MessageRowView.swift */; };
+		C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C62670A3D3003F3DE8 /* MessageView.swift */; };
+		C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
-		C69EA0B326709876003F3DE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C69EA0B326709876003F3DE8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		C69EA0B526709877003F3DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69EA0B826709877003F3DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C69EA0BA26709877003F3DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C69EA0C026709CF7003F3DE8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C69EA0C226709D54003F3DE8 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
+		C69EA0C42670A196003F3DE8 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
+		C69EA0C62670A3D3003F3DE8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */,
-				C69EA0B326709876003F3DE8 /* ContentView.swift */,
+				C69EA0CA2670ABB6003F3DE8 /* ViewModel */,
+				C69EA0C92670ABAE003F3DE8 /* Model */,
+				C69EA0C82670AB90003F3DE8 /* View */,
 				C69EA0B526709877003F3DE8 /* Assets.xcassets */,
 				C69EA0BA26709877003F3DE8 /* Info.plist */,
 				C69EA0B726709877003F3DE8 /* Preview Content */,
@@ -67,6 +79,33 @@
 				C69EA0B826709877003F3DE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C69EA0C82670AB90003F3DE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C69EA0B326709876003F3DE8 /* ChatView.swift */,
+				C69EA0C42670A196003F3DE8 /* MessageRowView.swift */,
+				C69EA0C62670A3D3003F3DE8 /* MessageView.swift */,
+				C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C69EA0C92670ABAE003F3DE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C69EA0C026709CF7003F3DE8 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C69EA0CA2670ABB6003F3DE8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C69EA0C226709D54003F3DE8 /* MessageListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69EA0B426709876003F3DE8 /* ContentView.swift in Sources */,
+				C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */,
+				C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */,
+				C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */,
+				C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */,
+				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
+				C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KryvodubOleksandr.FLY-Concierge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -300,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "KryvodubOleksandr.FLY-Concierge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
