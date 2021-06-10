@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Filters {
+struct Filter {
     var eat = false
     var drink = false
     var play = false

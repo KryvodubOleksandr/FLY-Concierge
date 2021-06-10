@@ -10,52 +10,31 @@ import SwiftUI
 struct FilterView: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @State private var filter = Filters()
+    @State private var filter = Filter()
     
     var body: some View {
         NavigationView {
             ZStack {
                 ScrollView(showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 1) {
-                        Group {
-                            Text("CATEGORY")
-                                .padding(.leading)
-                                .padding(.trailing)
-                                .padding(.top, 5)
-                                .padding(.bottom, 5)
-                            ToggleRow(isOn: $filter.eat, title: "Eat", imageName: "star")
-                            ToggleRow(isOn: $filter.drink, title: "Drink", imageName: "star")
-                            ToggleRow(isOn: $filter.play, title: "Play", imageName: "star")
+                    VStack(alignment: .leading, spacing: 0) {
+                        FilterGroup(name: "CATEGORY") {
+                                FilterRow(isOn: $filter.eat, title: "Eat", imageName: "mouth")
+                                FilterRow(isOn: $filter.drink, title: "Drink", imageName: "drop")
+                                FilterRow(isOn: $filter.play, title: "Play", imageName: "play")
                         }
-                        
-                        Group {
-                            Text("DISTANCE")
-                                .padding(.leading)
-                                .padding(.trailing)
-                                .padding(.top, 5)
-                                .padding(.bottom, 5)
-                            ToggleRow(isOn: $filter.close, title: "Keep It Close", imageName: "star")
-                            ToggleRow(isOn: $filter.travel, title: "I`m Down To Travel", imageName: "star")
+                        FilterGroup(name: "DISTANCE") {
+                            FilterRow(isOn: $filter.close, title: "Keep It Close", imageName: "figure.walk")
+                            FilterRow(isOn: $filter.travel, title: "I`m Down To Travel", imageName: "car")
                         }
-                        Group {
-                            Text("ATTIRE")
-                                .padding(.leading)
-                                .padding(.trailing)
-                                .padding(.top, 5)
-                                .padding(.bottom, 5)
-                            ToggleRow(isOn: $filter.casual, title: "Casual", imageName: "star")
-                            ToggleRow(isOn: $filter.trendy, title: "Trendy", imageName: "star")
-                            ToggleRow(isOn: $filter.formal, title: "Formal", imageName: "star")
+                        FilterGroup(name: "ATTIRE") {
+                            FilterRow(isOn: $filter.casual, title: "Casual", imageName: "circle")
+                            FilterRow(isOn: $filter.trendy, title: "Trendy", imageName: "hexagon")
+                            FilterRow(isOn: $filter.formal, title: "Formal", imageName: "square")
                         }
-                        Group {
-                            Text("PRICE")
-                                .padding(.leading)
-                                .padding(.trailing)
-                                .padding(.top, 5)
-                                .padding(.bottom, 5)
-                            ToggleRow(isOn: $filter.cheap, title: "Cheap", imageName: "star")
-                            ToggleRow(isOn: $filter.reasonable, title: "Reasonable", imageName: "star")
-                            ToggleRow(isOn: $filter.expensive, title: "Expensive", imageName: "star")
+                        FilterGroup(name: "PRICE") {
+                            FilterRow(isOn: $filter.cheap, title: "Cheap", imageName: "arrow.down")
+                            FilterRow(isOn: $filter.reasonable, title: "Reasonable", imageName: "arrow.up.arrow.down")
+                            FilterRow(isOn: $filter.expensive, title: "Expensive", imageName: "arrow.up")
                         }
                         Rectangle().fill(Color.clear).frame(height: 60)
                             .padding()
@@ -116,6 +95,31 @@ struct FilterView_Previews: PreviewProvider {
             FilterView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 12")
+        }
+    }
+}
+
+struct FilterGroup<Content: View>: View {
+    let content: Content
+    let name: String
+    
+    init(name: String, @ViewBuilder content: () -> Content) {
+        self.name = name
+        self.content = content()
+    }
+    var body: some View {
+        Group {
+            Text(name)
+                .padding(.leading)
+                .padding(.trailing)
+                .padding(.top, 5)
+                .padding(.bottom, 5)
+            VStack(spacing: 1) {
+                content
+                    .padding(10)
+                    .background(Color(.systemGray4).opacity(0.8))
+            }
+            .cornerRadius(15)
         }
     }
 }

@@ -21,7 +21,10 @@ struct ChatView: View {
                         MessageRowView(message: message)
                     }
                 }
-                .padding(5)
+                .padding(.top, 10)
+                .padding(.leading, 5)
+                .padding(.trailing, 5)
+                .padding(.bottom, 5)
             }
             .background(Image("background")
                             .resizable()

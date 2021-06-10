@@ -7,20 +7,14 @@
 
 import SwiftUI
 
-struct ToggleRow: View {
+struct FilterRow: View {
     @Binding var isOn: Bool
     let title: String
     let imageName: String
     var body: some View {
         HStack {
             Label(title: { Text(title).lineLimit(1) }, icon: { Image(systemName: imageName) }).layoutPriority(1)
-            
             Toggle(isOn: $isOn) {}
         }
-        .padding(.leading)
-        .padding(.trailing)
-        .padding(.top, 5)
-        .padding(.bottom, 5)
-        .background(Color(.systemGray4).opacity(0.4))
     }
 }
