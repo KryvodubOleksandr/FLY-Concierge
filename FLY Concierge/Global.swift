@@ -24,6 +24,7 @@ struct Padding {
 }
 struct Spacing {
     static let small = CGFloat(5)
+    static let medium = CGFloat(10)
 }
 struct Colour {
     static let accent = Color(.systemTeal)

@@ -16,10 +16,10 @@ struct FilterList<Content: View>: View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 0) {
                 content
-                Rectangle().fill(Color.clear).frame(height: 60)
+                Rectangle().fill(Color.clear).frame(height: Size.largeButton)
                     .padding()
             }
-            .padding(.top, 4)
+            .padding(.top, Padding.small)
         }
     }
 }
@@ -34,16 +34,13 @@ struct FilterGroup<Content: View>: View {
     var body: some View {
         Group {
             Text(name)
-                .padding(.leading)
-                .padding(.trailing)
-                .padding(.top, 5)
-                .padding(.bottom, 5)
+                .padding()
             VStack(spacing: 1) {
                 content
-                    .padding(10)
-                    .background(Color(.systemGray4).opacity(0.8))
+                    .padding(Padding.medium)
+                    .background(Colour.main)
             }
-            .cornerRadius(15)
+            .cornerRadius(Size.cornerRadius)
         }
     }
 }

@@ -15,7 +15,6 @@ struct ImageButton: View {
     var body: some View {
         Image(systemName: name)
             .font(.title3)
-            .foregroundColor(.primary)
     }
 }
 

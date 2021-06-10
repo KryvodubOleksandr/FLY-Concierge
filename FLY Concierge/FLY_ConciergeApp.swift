@@ -11,7 +11,8 @@ import SwiftUI
 struct FLY_ConciergeApp: App {
     
     init() {
-//        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().tintColor = UIColor(Colour.text)
     }
     
     var body: some Scene {

@@ -14,7 +14,7 @@ struct BackgroundModifier: ViewModifier {
             .resizable()
             .renderingMode(.template)
             .aspectRatio(contentMode: .fill)
-            .opacity(0.1))
+            .opacity(Opacity.background))
     }
 }
 extension View {
@@ -29,12 +29,12 @@ struct MessageStack<Content: View>: View {
         self.content = content()
     }
     var body: some View {
-        LazyVStack(alignment: .leading, spacing: 10) {
+        LazyVStack(alignment: .leading, spacing: Spacing.medium) {
             content
         }
-        .padding(.top, 10)
-        .padding(.leading, 5)
-        .padding(.trailing, 5)
-        .padding(.bottom, 5)
+        .padding(.top, Padding.medium)
+        .padding(.leading, Padding.small)
+        .padding(.trailing, Padding.small)
+        .padding(.bottom, Padding.small)
     }
 }

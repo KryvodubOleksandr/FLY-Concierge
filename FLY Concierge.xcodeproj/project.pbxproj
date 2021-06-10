@@ -10,7 +10,7 @@
 		C623967926721E39000AB98F /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967826721E39000AB98F /* ButtonViews.swift */; };
 		C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967A26721E74000AB98F /* ViewBuilders.swift */; };
 		C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967C26721F08000AB98F /* ViewModifiers.swift */; };
-		C623967F2672219A000AB98F /* FLY.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967E2672219A000AB98F /* FLY.swift */; };
+		C623967F2672219A000AB98F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967E2672219A000AB98F /* Global.swift */; };
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
 		C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* ChatView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 		C623967826721E39000AB98F /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 		C623967A26721E74000AB98F /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
 		C623967C26721F08000AB98F /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
-		C623967E2672219A000AB98F /* FLY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY.swift; sourceTree = "<group>"; };
+		C623967E2672219A000AB98F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
 		C69EA0B326709876003F3DE8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -77,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */,
+				C623967E2672219A000AB98F /* Global.swift */,
 				C623967A26721E74000AB98F /* ViewBuilders.swift */,
 				C623967C26721F08000AB98F /* ViewModifiers.swift */,
 				C69EA0CA2670ABB6003F3DE8 /* ViewModel */,
@@ -116,7 +117,6 @@
 			children = (
 				C69EA0C026709CF7003F3DE8 /* Message.swift */,
 				C69EA0D12671FCD0003F3DE8 /* Filter.swift */,
-				C623967E2672219A000AB98F /* FLY.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 				C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */,
 				C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */,
 				C623967926721E39000AB98F /* ButtonViews.swift in Sources */,
-				C623967F2672219A000AB98F /* FLY.swift in Sources */,
+				C623967F2672219A000AB98F /* Global.swift in Sources */,
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
 				C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */,
