@@ -29,7 +29,7 @@ struct ChatView: View {
                             .aspectRatio(contentMode: .fill)
                             .opacity(0.1))
             .fullScreenCover(isPresented: $isShowingFilterView) {
-                Text("FILTER")
+                FilterView()
             }
             .navigationTitle("FLY")
             .navigationBarTitleDisplayMode(.inline)
@@ -42,7 +42,6 @@ struct ChatView: View {
                                    ,
                                 trailing: Button(action: { isShowingSettingsView.toggle() }) {
                                     Image(systemName: "gearshape")
-                                        .font(.title3)
                                         .foregroundColor(.primary)
                                 })
         }

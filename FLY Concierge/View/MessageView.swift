@@ -15,7 +15,7 @@ struct MessageView: View {
         Text(message.text)
             .padding(12)
             .foregroundColor(!message.isUsers && colorScheme == .dark ? .primary : .black)
-            .background(message.isUsers ? Color(.systemTeal) : Color(.systemGray3))
+            .background(message.isUsers ? Color(.systemTeal).opacity(0.9) : Color(.systemGray4).opacity(0.9))
             .cornerRadius(15)
     }
 }

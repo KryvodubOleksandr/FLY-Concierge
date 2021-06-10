@@ -19,7 +19,7 @@ struct MessageRowView: View {
                 VStack {
                     Spacer()
                     Circle()
-                        .fill(Color(.systemGray3))
+                        .fill(Color(.systemGray4).opacity(0.9))
                         .frame(width: 25, height: 25)
                         .overlay(Text("FLY").font(.caption2))
                 }

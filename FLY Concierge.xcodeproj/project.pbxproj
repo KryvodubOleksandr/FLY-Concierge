@@ -16,6 +16,9 @@
 		C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C42670A196003F3DE8 /* MessageRowView.swift */; };
 		C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C62670A3D3003F3DE8 /* MessageView.swift */; };
 		C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */; };
+		C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */; };
+		C69EA0D02671FC49003F3DE8 /* ToggleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CF2671FC49003F3DE8 /* ToggleRow.swift */; };
+		C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0D12671FCD0003F3DE8 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		C69EA0C42670A196003F3DE8 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		C69EA0C62670A3D3003F3DE8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		C69EA0CF2671FC49003F3DE8 /* ToggleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRow.swift; sourceTree = "<group>"; };
+		C69EA0D12671FCD0003F3DE8 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 				C69EA0C42670A196003F3DE8 /* MessageRowView.swift */,
 				C69EA0C62670A3D3003F3DE8 /* MessageView.swift */,
 				C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */,
+				C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */,
+				C69EA0CF2671FC49003F3DE8 /* ToggleRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C69EA0C026709CF7003F3DE8 /* Message.swift */,
+				C69EA0D12671FCD0003F3DE8 /* Filter.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,11 +187,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */,
+				C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */,
 				C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */,
 				C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */,
 				C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */,
+				C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */,
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
+				C69EA0D02671FC49003F3DE8 /* ToggleRow.swift in Sources */,
 				C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
