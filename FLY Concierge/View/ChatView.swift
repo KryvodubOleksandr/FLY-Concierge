@@ -16,39 +16,33 @@ struct ChatView: View {
         NavigationView {
             ScrollView {
                 NavigationLink(destination: SettingsView(), isActive: $isShowingSettingsView) { EmptyView() }
-                LazyVStack(alignment: .leading, spacing: 10) {
+                MessageStack {
                     ForEach(messages.messages, id: \.text) { message in
                         MessageRowView(message: message)
                     }
                 }
-                .padding(.top, 10)
-                .padding(.leading, 5)
-                .padding(.trailing, 5)
-                .padding(.bottom, 5)
             }
-            .background(Image("background")
-                            .resizable()
-                            .renderingMode(.template)
-                            .aspectRatio(contentMode: .fill)
-                            .opacity(0.1))
+            .addBackground()
+            
             .fullScreenCover(isPresented: $isShowingFilterView) {
                 FilterView()
             }
+            
             .navigationTitle("FLY")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading:
-                                    Button(action: { isShowingFilterView.toggle() }){
-                                        Image(systemName: "slider.horizontal.3")
-                                            .font(.title3)
-                                            .foregroundColor(.primary)
-                                    }
-                                   ,
-                                trailing: Button(action: { isShowingSettingsView.toggle() }) {
-                                    Image(systemName: "gearshape")
-                                        .foregroundColor(.primary)
-                                })
+            .navigationBarItems(leading: filterButton ,trailing: settingsButton)
         }
-       
+    }
+    
+    var filterButton: some View {
+        Button(action: { isShowingFilterView.toggle() }){
+            ImageButton("slider.horizontal.3")
+        }
+    }
+    var settingsButton: some View {
+        Button(action: { isShowingSettingsView.toggle() }) {
+            ImageButton("gearshape")
+        }
     }
 }
 

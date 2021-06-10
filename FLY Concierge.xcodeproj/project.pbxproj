@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C623967926721E39000AB98F /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967826721E39000AB98F /* ImageButton.swift */; };
+		C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967A26721E74000AB98F /* ViewBuilders.swift */; };
+		C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967C26721F08000AB98F /* ViewModifiers.swift */; };
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
 		C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* ChatView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C623967826721E39000AB98F /* ImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		C623967A26721E74000AB98F /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
+		C623967C26721F08000AB98F /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
 		C69EA0B326709876003F3DE8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */,
+				C623967A26721E74000AB98F /* ViewBuilders.swift */,
+				C623967C26721F08000AB98F /* ViewModifiers.swift */,
 				C69EA0CA2670ABB6003F3DE8 /* ViewModel */,
 				C69EA0C92670ABAE003F3DE8 /* Model */,
 				C69EA0C82670AB90003F3DE8 /* View */,
@@ -96,6 +104,7 @@
 				C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */,
 				C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */,
 				C69EA0CF2671FC49003F3DE8 /* FilterRow.swift */,
+				C623967826721E39000AB98F /* ImageButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -188,12 +197,15 @@
 			files = (
 				C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */,
 				C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */,
+				C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */,
 				C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */,
 				C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */,
 				C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */,
 				C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */,
+				C623967926721E39000AB98F /* ImageButton.swift in Sources */,
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
+				C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */,
 				C69EA0D02671FC49003F3DE8 /* FilterRow.swift in Sources */,
 				C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */,
 			);

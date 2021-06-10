@@ -13,7 +13,10 @@ struct FilterRow: View {
     let imageName: String
     var body: some View {
         HStack {
-            Label(title: { Text(title).lineLimit(1) }, icon: { Image(systemName: imageName) }).layoutPriority(1)
+            Label(title: {
+                    Text(title).lineLimit(1)
+            }) { Image(systemName: imageName) }
+                .layoutPriority(1)
             Toggle(isOn: $isOn) {}
         }
     }
