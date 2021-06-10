@@ -19,8 +19,13 @@ struct ImageButton: View {
     }
 }
 
-struct ImageButton_Previews: PreviewProvider {
-    static var previews: some View {
-        ImageButton("star")
+struct LargeButton: View {
+    var body: some View {
+        RoundedRectangle(cornerRadius: Size.cornerRadius)
+            .fill(Colour.accent)
+            .frame(height: Size.largeButton)
+            .overlay(Text("Apply")
+            .font(.title3)
+            .foregroundColor(Colour.secondaryText))
     }
 }

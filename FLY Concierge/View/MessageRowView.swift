@@ -12,21 +12,21 @@ struct MessageRowView: View {
     let message: Message
     
     var body: some View {
-        HStack(spacing: 5) {
+        HStack(spacing: Spacing.small) {
             if message.isUsers {
                 Spacer()
             } else {
                 VStack {
                     Spacer()
                     Circle()
-                        .fill(Color(.systemGray4).opacity(0.9))
-                        .frame(width: 25, height: 25)
+                        .fill(Colour.main)
+                        .frame(width: Size.smallImage, height: Size.smallImage)
                         .overlay(Text("FLY").font(.caption2))
                 }
             }
             MessageView(message: message)
         }
-        .shadow(color: .primary.opacity(0.1), radius: 1, x: 1, y: 1)
+        .shadow(color: Colour.shadow, radius: 1, x: 1, y: 1)
     }
 }
 

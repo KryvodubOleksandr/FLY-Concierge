@@ -13,10 +13,10 @@ struct MessageView: View {
     
     var body: some View {
         Text(message.text)
-            .padding(12)
-            .foregroundColor(!message.isUsers && colorScheme == .dark ? .primary : .black)
-            .background(message.isUsers ? Color(.systemTeal) : Color(.systemGray4).opacity(0.8))
-            .cornerRadius(15)
+            .padding(Padding.large)
+            .foregroundColor(!message.isUsers && colorScheme == .dark ? Colour.text : Colour.secondaryText)
+            .background(message.isUsers ? Colour.accent : Colour.main)
+            .cornerRadius(Size.cornerRadius)
     }
 }
 

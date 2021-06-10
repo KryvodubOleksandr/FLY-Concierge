@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FilterRow: View {
+struct FilterRowView: View {
     @Binding var isOn: Bool
     let title: String
     let imageName: String
