@@ -23,25 +23,26 @@ struct MessageListView: View {
                 }
             }
             .addBackground()
-            
             .fullScreenCover(isPresented: $isShowingFilterView) {
                 FilterListView()
             }
-            
-            .navigationTitle("FLY")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) { filterButton }
+                ToolbarItem(placement: .principal) { Text("F L Y").font(.title2) }
+                ToolbarItem(placement: .navigationBarTrailing) { settingsButton }
+            }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(leading: filterButton ,trailing: settingsButton)
         }
     }
     
     var filterButton: some View {
         Button(action: { isShowingFilterView.toggle() }){
-            ImageButton("slider.horizontal.3")
+            ImageButtonView("slider.horizontal.3")
         }
     }
     var settingsButton: some View {
         Button(action: { isShowingSettingsView.toggle() }) {
-            ImageButton("gearshape")
+            ImageButtonView("gearshape")
         }
     }
 }

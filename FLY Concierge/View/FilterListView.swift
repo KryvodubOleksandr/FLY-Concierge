@@ -43,9 +43,12 @@ struct FilterListView: View {
                 }
                 .padding()
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) { closeButton }
+                ToolbarItem(placement: .principal) { Text("Filters").font(.title3) }
+                ToolbarItem(placement: .navigationBarTrailing) { resetButton }
+            }
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Filter")
-            .navigationBarItems(leading: closeButton, trailing: resetButton)
         }
     }
     
@@ -53,21 +56,21 @@ struct FilterListView: View {
         Button(action: {
             presentationMode.wrappedValue.dismiss()
         }) {
-            ImageButton("xmark.circle")
+            ImageButtonView("xmark.circle")
         }
     }
     var resetButton: some View {
         Button(action: {
             filter.reset()
         }) {
-            ImageButton("trash")
+            ImageButtonView("trash")
         }
     }
     var applyButton: some View {
         Button(action: {
             presentationMode.wrappedValue.dismiss()
         }) {
-            LargeButton()
+            LargeButtonView()
         }
     }
 }

@@ -11,26 +11,25 @@ struct SettingsListView: View {
     @State private var allowAnalytics = false
     
     var body: some View {
-        NavigationView {
-            SettingsList {
-                LogoImage("logo")
-                Text(AppContent.description)
-                    .padding(Padding.small)
-                    .font(.subheadline)
-                SettingsGroup {
-                    SettingsRowView(text: "Terms of Service")
-                    SettingsRowView(text: "Private Policy")
-                    SettingsRowView(text: "Rate the app")
-                    SettingsRowView(text: "Licences")
-                    SettingsRowView(text: "Contact us")
-                }
-                FilterRowView(isOn: $allowAnalytics, title: "Allow to use personal data for analytics", imageName: "")
-                    .font(.subheadline)
-                    .padding(Padding.small)
+        SettingsList {
+            LogoImageView("logo")
+            Text(AppContent.description)
+                .padding(Padding.medium)
+                .font(.subheadline)
+            SettingsGroup {
+                SettingsRowView(text: "Terms of Service")
+                SettingsRowView(text: "Private Policy")
+                SettingsRowView(text: "Rate the app")
+                SettingsRowView(text: "Licences")
+                SettingsRowView(text: "Contact us")
             }
-            .addBackground()
-            .navigationBarTitleDisplayMode(.inline)
+            SettingsToggleView(isOn: $allowAnalytics, title: "Allow to use personal data for analytics")
         }
+        .addBackground()
+        .toolbar {
+            ToolbarItem(placement: .principal) { Text("Settings").font(.title3) }
+        }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C623967926721E39000AB98F /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967826721E39000AB98F /* ButtonViews.swift */; };
+		C623967926721E39000AB98F /* ImageButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967826721E39000AB98F /* ImageButtonView.swift */; };
 		C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967A26721E74000AB98F /* ViewBuilders.swift */; };
 		C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967C26721F08000AB98F /* ViewModifiers.swift */; };
 		C623967F2672219A000AB98F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967E2672219A000AB98F /* Global.swift */; };
 		C6239681267326C9000AB98F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239680267326C9000AB98F /* SettingsRowView.swift */; };
+		C62396832673402F000AB98F /* SettingsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62396822673402F000AB98F /* SettingsToggleView.swift */; };
+		C623968526734190000AB98F /* LargeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623968426734190000AB98F /* LargeButtonView.swift */; };
+		C6239687267341A3000AB98F /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239686267341A3000AB98F /* LogoImageView.swift */; };
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
 		C69EA0B426709876003F3DE8 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* MessageListView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
@@ -27,11 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C623967826721E39000AB98F /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
+		C623967826721E39000AB98F /* ImageButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonView.swift; sourceTree = "<group>"; };
 		C623967A26721E74000AB98F /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
 		C623967C26721F08000AB98F /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		C623967E2672219A000AB98F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		C6239680267326C9000AB98F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		C62396822673402F000AB98F /* SettingsToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToggleView.swift; sourceTree = "<group>"; };
+		C623968426734190000AB98F /* LargeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonView.swift; sourceTree = "<group>"; };
+		C6239686267341A3000AB98F /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
 		C69EA0B326709876003F3DE8 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
@@ -106,11 +112,14 @@
 				C69EA0B326709876003F3DE8 /* MessageListView.swift */,
 				C69EA0C42670A196003F3DE8 /* MessageRowView.swift */,
 				C69EA0C62670A3D3003F3DE8 /* MessageView.swift */,
-				C69EA0CB2670CB28003F3DE8 /* SettingsListView.swift */,
 				C69EA0CD2671D0AF003F3DE8 /* FilterListView.swift */,
 				C69EA0CF2671FC49003F3DE8 /* FilterRowView.swift */,
-				C623967826721E39000AB98F /* ButtonViews.swift */,
+				C69EA0CB2670CB28003F3DE8 /* SettingsListView.swift */,
 				C6239680267326C9000AB98F /* SettingsRowView.swift */,
+				C62396822673402F000AB98F /* SettingsToggleView.swift */,
+				C623967826721E39000AB98F /* ImageButtonView.swift */,
+				C623968426734190000AB98F /* LargeButtonView.swift */,
+				C6239686267341A3000AB98F /* LogoImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C69EA0CC2670CB28003F3DE8 /* SettingsListView.swift in Sources */,
+				C62396832673402F000AB98F /* SettingsToggleView.swift in Sources */,
 				C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */,
 				C6239681267326C9000AB98F /* SettingsRowView.swift in Sources */,
 				C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */,
@@ -209,12 +219,14 @@
 				C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */,
 				C69EA0B426709876003F3DE8 /* MessageListView.swift in Sources */,
 				C69EA0CE2671D0AF003F3DE8 /* FilterListView.swift in Sources */,
-				C623967926721E39000AB98F /* ButtonViews.swift in Sources */,
+				C623967926721E39000AB98F /* ImageButtonView.swift in Sources */,
 				C623967F2672219A000AB98F /* Global.swift in Sources */,
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
 				C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */,
 				C69EA0D02671FC49003F3DE8 /* FilterRowView.swift in Sources */,
+				C6239687267341A3000AB98F /* LogoImageView.swift in Sources */,
+				C623968526734190000AB98F /* LargeButtonView.swift in Sources */,
 				C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
