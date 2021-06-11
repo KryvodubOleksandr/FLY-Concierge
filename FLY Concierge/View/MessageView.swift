@@ -14,9 +14,8 @@ struct MessageView: View {
     var body: some View {
         Text(message.text)
             .padding(Padding.large)
-            .foregroundColor(!message.isUsers && colorScheme == .dark ? Colour.text : Colour.secondaryText)
+            .foregroundColor(message.isUsers ? Colour.secondaryText : Colour.text)
             .background(message.isUsers ? Colour.accent : Colour.main)
-            .cornerRadius(Size.cornerRadius)
     }
 }
 

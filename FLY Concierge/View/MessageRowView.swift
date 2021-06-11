@@ -24,7 +24,9 @@ struct MessageRowView: View {
                         .overlay(Text("FLY").font(.caption2))
                 }
             }
-            MessageView(message: message)
+            ChatBubble(isUsers: message.isUsers) {
+                MessageView(message: message)
+            }
         }
         .shadow(color: Colour.shadow, radius: 1, x: 1, y: 1)
     }

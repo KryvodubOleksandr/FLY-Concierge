@@ -73,3 +73,32 @@ struct SettingsGroup<Content: View>: View {
         .cornerRadius(Size.cornerRadius)
     }
 }
+
+struct ChatBubble<Content>: View where Content: View {
+    let isUsers: Bool
+    let content: () -> Content
+    init(isUsers: Bool, @ViewBuilder content: @escaping () -> Content) {
+            self.content = content
+            self.isUsers = isUsers
+    }
+    var direction: ChatBubbleShape.Direction {
+        if isUsers == true {
+            return .right
+        } else {
+            return .left
+        }
+    }
+    
+    var body: some View {
+        HStack {
+            if direction == .right {
+                Spacer()
+            }
+            content()
+                .clipShape(ChatBubbleShape(direction: direction))
+            if direction == .left {
+                Spacer()
+            }
+        }
+    }
+}

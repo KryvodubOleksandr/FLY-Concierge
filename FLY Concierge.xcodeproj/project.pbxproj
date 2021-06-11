@@ -15,6 +15,7 @@
 		C62396832673402F000AB98F /* SettingsToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62396822673402F000AB98F /* SettingsToggleView.swift */; };
 		C623968526734190000AB98F /* LargeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623968426734190000AB98F /* LargeButtonView.swift */; };
 		C6239687267341A3000AB98F /* LogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239686267341A3000AB98F /* LogoImageView.swift */; };
+		C6239689267342D2000AB98F /* ChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239688267342D2000AB98F /* ChatBubbleShape.swift */; };
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
 		C69EA0B426709876003F3DE8 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* MessageListView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		C62396822673402F000AB98F /* SettingsToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsToggleView.swift; sourceTree = "<group>"; };
 		C623968426734190000AB98F /* LargeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButtonView.swift; sourceTree = "<group>"; };
 		C6239686267341A3000AB98F /* LogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoImageView.swift; sourceTree = "<group>"; };
+		C6239688267342D2000AB98F /* ChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleShape.swift; sourceTree = "<group>"; };
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
 		C69EA0B326709876003F3DE8 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				C623967E2672219A000AB98F /* Global.swift */,
 				C623967A26721E74000AB98F /* ViewBuilders.swift */,
 				C623967C26721F08000AB98F /* ViewModifiers.swift */,
+				C6239688267342D2000AB98F /* ChatBubbleShape.swift */,
 				C69EA0CA2670ABB6003F3DE8 /* ViewModel */,
 				C69EA0C92670ABAE003F3DE8 /* Model */,
 				C69EA0C82670AB90003F3DE8 /* View */,
@@ -224,6 +227,7 @@
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,
 				C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */,
 				C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */,
+				C6239689267342D2000AB98F /* ChatBubbleShape.swift in Sources */,
 				C69EA0D02671FC49003F3DE8 /* FilterRowView.swift in Sources */,
 				C6239687267341A3000AB98F /* LogoImageView.swift in Sources */,
 				C623968526734190000AB98F /* LargeButtonView.swift in Sources */,

@@ -36,4 +36,12 @@ struct Colour {
 }
 struct AppContent {
     static let description = "The FLY iOS App is a contemporary tool designed to optimize free time by taking the quessworkout of social activities. It represents the evolution of the archaic hotel concierge platform refashioned into disruptive modern day mobile alternative available to all."
+    static let messages = [Message(text: "Hello there☀️", isUsers: false),
+                           Message(text: "Welcome to FLY Concierge!", isUsers: false),
+                           Message(text: "Can I show the coolest places in New York near you?", isUsers: false),
+                           Message(text: "Yes, show me what you got☺️", isUsers: true),
+                           Message(text: "Awesome", isUsers: false),
+                           Message(text: "So, where are you?🧐", isUsers: false),
+                           Message(text: "Please allow me access to your geo laction", isUsers: false),
+                           Message(text: "I`m working on it", isUsers: true)]
 }
