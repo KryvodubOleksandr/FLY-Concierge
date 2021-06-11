@@ -18,6 +18,8 @@ struct SettingsToggleView: View {
             Toggle(isOn: $isOn) {}
         }
         .font(.subheadline)
-        .padding(Padding.small)
+        .padding(.leading, Padding.large)
+        .padding(.trailing, Padding.large)
+        
     }
 }

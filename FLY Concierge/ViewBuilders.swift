@@ -38,7 +38,10 @@ struct FilterGroup<Content: View>: View {
                 .padding(Padding.medium)
             VStack(spacing: 1) {
                 content
-                    .padding(Padding.medium)
+                    .padding(.leading, Padding.large)
+                    .padding(.trailing, Padding.large)
+                    .padding(.top, Padding.regular)
+                    .padding(.bottom, Padding.regular)
                     .background(Colour.main)
             }
             .cornerRadius(Size.cornerRadius)

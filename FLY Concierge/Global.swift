@@ -20,6 +20,7 @@ struct Size {
 }
 struct Padding {
     static let small = CGFloat(4)
+    static let regular = CGFloat(6)
     static let medium = CGFloat(8)
     static let large = CGFloat(12)
 }

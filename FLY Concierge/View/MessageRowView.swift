@@ -12,7 +12,7 @@ struct MessageRowView: View {
     let message: Message
     
     var body: some View {
-        HStack(spacing: Spacing.small) {
+        HStack(spacing: 1) {
             if message.isUsers {
                 Spacer()
             } else {
