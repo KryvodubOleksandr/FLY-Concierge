@@ -11,16 +11,17 @@
 		C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967A26721E74000AB98F /* ViewBuilders.swift */; };
 		C623967D26721F08000AB98F /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967C26721F08000AB98F /* ViewModifiers.swift */; };
 		C623967F2672219A000AB98F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = C623967E2672219A000AB98F /* Global.swift */; };
+		C6239681267326C9000AB98F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6239680267326C9000AB98F /* SettingsRowView.swift */; };
 		C69EA0B226709876003F3DE8 /* FLY_ConciergeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */; };
-		C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* ChatView.swift */; };
+		C69EA0B426709876003F3DE8 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0B326709876003F3DE8 /* MessageListView.swift */; };
 		C69EA0B626709877003F3DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B526709877003F3DE8 /* Assets.xcassets */; };
 		C69EA0B926709877003F3DE8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C69EA0B826709877003F3DE8 /* Preview Assets.xcassets */; };
 		C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C026709CF7003F3DE8 /* Message.swift */; };
 		C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C226709D54003F3DE8 /* MessageListViewModel.swift */; };
 		C69EA0C52670A196003F3DE8 /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C42670A196003F3DE8 /* MessageRowView.swift */; };
 		C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0C62670A3D3003F3DE8 /* MessageView.swift */; };
-		C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */; };
-		C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */; };
+		C69EA0CC2670CB28003F3DE8 /* SettingsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CB2670CB28003F3DE8 /* SettingsListView.swift */; };
+		C69EA0CE2671D0AF003F3DE8 /* FilterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CD2671D0AF003F3DE8 /* FilterListView.swift */; };
 		C69EA0D02671FC49003F3DE8 /* FilterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0CF2671FC49003F3DE8 /* FilterRowView.swift */; };
 		C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69EA0D12671FCD0003F3DE8 /* Filter.swift */; };
 /* End PBXBuildFile section */
@@ -30,9 +31,10 @@
 		C623967A26721E74000AB98F /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
 		C623967C26721F08000AB98F /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		C623967E2672219A000AB98F /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		C6239680267326C9000AB98F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		C69EA0AE26709876003F3DE8 /* FLY Concierge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FLY Concierge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C69EA0B126709876003F3DE8 /* FLY_ConciergeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLY_ConciergeApp.swift; sourceTree = "<group>"; };
-		C69EA0B326709876003F3DE8 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C69EA0B326709876003F3DE8 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		C69EA0B526709877003F3DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C69EA0B826709877003F3DE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C69EA0BA26709877003F3DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,9 +42,9 @@
 		C69EA0C226709D54003F3DE8 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
 		C69EA0C42670A196003F3DE8 /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		C69EA0C62670A3D3003F3DE8 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
-		C69EA0CF2671FC49003F3DE8 /* FilterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRowView.swift; sourceTree = "<group>"; };
+		C69EA0CB2670CB28003F3DE8 /* SettingsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListView.swift; sourceTree = "<group>"; };
+		C69EA0CD2671D0AF003F3DE8 /* FilterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterListView.swift; sourceTree = "<group>"; };
+		C69EA0CF2671FC49003F3DE8 /* FilterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRowView.swift; sourceTree = "<group>"; usesTabs = 0; };
 		C69EA0D12671FCD0003F3DE8 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,13 +103,14 @@
 		C69EA0C82670AB90003F3DE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C69EA0B326709876003F3DE8 /* ChatView.swift */,
+				C69EA0B326709876003F3DE8 /* MessageListView.swift */,
 				C69EA0C42670A196003F3DE8 /* MessageRowView.swift */,
 				C69EA0C62670A3D3003F3DE8 /* MessageView.swift */,
-				C69EA0CB2670CB28003F3DE8 /* SettingsView.swift */,
-				C69EA0CD2671D0AF003F3DE8 /* FilterView.swift */,
+				C69EA0CB2670CB28003F3DE8 /* SettingsListView.swift */,
+				C69EA0CD2671D0AF003F3DE8 /* FilterListView.swift */,
 				C69EA0CF2671FC49003F3DE8 /* FilterRowView.swift */,
 				C623967826721E39000AB98F /* ButtonViews.swift */,
+				C6239680267326C9000AB98F /* SettingsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -198,13 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C69EA0CC2670CB28003F3DE8 /* SettingsView.swift in Sources */,
+				C69EA0CC2670CB28003F3DE8 /* SettingsListView.swift in Sources */,
 				C69EA0D22671FCD0003F3DE8 /* Filter.swift in Sources */,
+				C6239681267326C9000AB98F /* SettingsRowView.swift in Sources */,
 				C623967B26721E74000AB98F /* ViewBuilders.swift in Sources */,
 				C69EA0C72670A3D3003F3DE8 /* MessageView.swift in Sources */,
 				C69EA0C126709CF7003F3DE8 /* Message.swift in Sources */,
-				C69EA0B426709876003F3DE8 /* ChatView.swift in Sources */,
-				C69EA0CE2671D0AF003F3DE8 /* FilterView.swift in Sources */,
+				C69EA0B426709876003F3DE8 /* MessageListView.swift in Sources */,
+				C69EA0CE2671D0AF003F3DE8 /* FilterListView.swift in Sources */,
 				C623967926721E39000AB98F /* ButtonViews.swift in Sources */,
 				C623967F2672219A000AB98F /* Global.swift in Sources */,
 				C69EA0C326709D54003F3DE8 /* MessageListViewModel.swift in Sources */,

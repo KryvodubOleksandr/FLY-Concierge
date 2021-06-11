@@ -16,10 +16,11 @@ struct Size {
     static let cornerRadius = CGFloat(15)
     static let largeButton = CGFloat(60)
     static let smallImage = CGFloat(25)
+    static let largeImage = CGFloat(150)
 }
 struct Padding {
     static let small = CGFloat(4)
-    static let medium = CGFloat(10)
+    static let medium = CGFloat(8)
     static let large = CGFloat(12)
 }
 struct Spacing {
@@ -32,4 +33,7 @@ struct Colour {
     static let shadow = Color.primary.opacity(0.1)
     static let text = Color.primary
     static let secondaryText = Color.black
+}
+struct AppContent {
+    static let description = "The FLY iOS App is a contemporary tool designed to optimize free time by taking the quessworkout of social activities. It represents the evolution of the archaic hotel concierge platform refashioned into disruptive modern day mobile alternative available to all."
 }

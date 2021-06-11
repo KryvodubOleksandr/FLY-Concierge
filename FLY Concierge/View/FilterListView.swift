@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FilterView: View {
+struct FilterListView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @State private var filter = Filter()
@@ -75,8 +75,8 @@ struct FilterView: View {
 struct FilterView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FilterView()
-            FilterView()
+            FilterListView()
+            FilterListView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 12")
         }

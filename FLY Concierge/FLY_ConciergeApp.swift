@@ -17,7 +17,7 @@ struct FLY_ConciergeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ChatView()
+            MessageListView()
         }
     }
 }

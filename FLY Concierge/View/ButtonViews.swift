@@ -28,3 +28,18 @@ struct LargeButton: View {
             .foregroundColor(Colour.secondaryText))
     }
 }
+
+struct LogoImage: View {
+    let imageName: String
+    init(_ imageName: String) {
+        self.imageName = imageName
+    }
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .frame(width: Size.largeImage, height: Size.largeImage)
+            .scaledToFit()
+            .clipShape(RoundedRectangle(cornerRadius: Size.cornerRadius))
+            .padding(Padding.small)
+    }
+}

@@ -21,6 +21,7 @@ struct FilterList<Content: View>: View {
             }
             .padding(.top, Padding.small)
         }
+        .padding(Padding.small)
     }
 }
 
@@ -34,7 +35,7 @@ struct FilterGroup<Content: View>: View {
     var body: some View {
         Group {
             Text(name)
-                .padding()
+                .padding(Padding.medium)
             VStack(spacing: 1) {
                 content
                     .padding(Padding.medium)
@@ -42,5 +43,33 @@ struct FilterGroup<Content: View>: View {
             }
             .cornerRadius(Size.cornerRadius)
         }
+    }
+}
+
+struct SettingsList<Content: View>: View {
+    let content: Content
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    var body: some View {
+        ScrollView {
+            content
+                .padding(.top, Padding.large)
+                .padding(.leading, Padding.small)
+                .padding(.trailing, Padding.small)
+        }
+    }
+}
+
+struct SettingsGroup<Content: View>: View {
+    let content: Content
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    var body: some View {
+        VStack(spacing: 1) {
+            content
+        }
+        .cornerRadius(Size.cornerRadius)
     }
 }

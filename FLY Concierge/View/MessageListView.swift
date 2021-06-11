@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChatView: View {
+struct MessageListView: View {
     @StateObject var messages = MessageListViewModel()
     @State private var isShowingFilterView = false
     @State private var isShowingSettingsView = false
@@ -15,7 +15,7 @@ struct ChatView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                NavigationLink(destination: SettingsView(), isActive: $isShowingSettingsView) { EmptyView() }
+                NavigationLink(destination: SettingsListView(), isActive: $isShowingSettingsView) { EmptyView() }
                 MessageStack {
                     ForEach(messages.messages, id: \.text) { message in
                         MessageRowView(message: message)
@@ -25,7 +25,7 @@ struct ChatView: View {
             .addBackground()
             
             .fullScreenCover(isPresented: $isShowingFilterView) {
-                FilterView()
+                FilterListView()
             }
             
             .navigationTitle("FLY")
@@ -49,8 +49,8 @@ struct ChatView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ChatView()
-            ChatView()
+            MessageListView()
+            MessageListView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 12")
         }
